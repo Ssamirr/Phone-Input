@@ -23,7 +23,7 @@ const Form = () => {
     return (
         <>
             <input onChange={handleChange} type="text" value={value} placeholder="(555) 555-5555" />
-            <button disabled={value.length!==14} type="submit">Submit</button>
+            <button disabled={value.length!==14} onClick={()=>setValue("")} type="submit">Submit</button>
         </>
     );
 };
